@@ -1,0 +1,6 @@
+{
+  "name": "weavingbird/vue-settler",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "An opinionated Vue SPA starter based on the full webpack vue template."
+}
