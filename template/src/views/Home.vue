@@ -3,48 +3,40 @@
     <div class="logo">
       <img src="../assets/logo.png" alt="" />
     </div>
-    <h1>WeavingBird Vue Settler</h1>
+    <h1>Vue Settler</h1>
     <span><strong>Yay!</strong> It worked! Now get to work and build your awesome single page app!</span>
-    <h2>
-      What's inside:
-    </h2>
-    <table>
-      <tr>
-        <th>Package</th>
-        <th>Description</th>
-        <th>Link</th>
-      </tr>
-      <tr>
-        <td>Vue</td>
-        <td>Intuitive, Fast and Composable MVVM for building interactive interfaces.</td>
-        <td><a href="https://vuejs.org/v2/guide/">Read</a></td>
-      </tr>
-      <tr>
-        <td>Vue Router</td>
-        <td>The official router for Vue.js. It deeply integrates with Vue.js core to make building Single Page Applications with Vue.js a breeze.</td>
-        <td><a href="https://router.vuejs.org/">Read</a></td>
-      </tr>
-      <tr>
-        <td>Vuex</td>
-        <td>Centralized State Management for Vue.js.</td>
-        <td><a href="http://vuex.vuejs.org/en/">Read</a></td>
-      </tr>
-      <tr>
-        <td>Axios</td>
-        <td>Promise based HTTP client for the browser and node.js</td>
-        <td><a href="https://github.com/mzabriskie/axios/">Read</a></td>
-      </tr>
-      <tr>
-        <td>Stylus</td>
-        <td>An innovative stylesheet language that compiles down to CSS.</td>
-        <td><a href="http://stylus-lang.com/">Read</a></td>
-      </tr>
-      <tr>
-        <td>LostGrid</td>
-        <td>A powerful grid system built in PostCSS that works with any preprocessor and even vanilla CSS.</td>
-        <td><a href="http://stylus-lang.com/">Read</a></td>
-      </tr>
-    </table>
+    <div class="waffle">
+      <div class="waffle-piece">
+        <p>Vue</p>
+        <p>Intuitive, Fast and Composable MVVM for building interactive interfaces.</p>
+        <p><a href="https://vuejs.org/v2/guide/">Docs</a></p>
+      </div>
+      <div class="waffle-piece">
+        <p>Vue Router</p>
+        <p>The official router for Vue.js. It deeply integrates with Vue.js core to make building Single Page Applications with Vue.js a breeze.</p>
+        <p><a href="https://router.vuejs.org/">Docs</a></p>
+      </div>
+      <div class="waffle-piece">
+        <p>Vuex</p>
+        <p>Cendivalized State Management for Vue.js.</p>
+        <p><a href="http://vuex.vuejs.org/en/">Docs</a></p>
+      </div>
+      <div class="waffle-piece">
+        <p>Axios</p>
+        <p>Promise based HTTP client for the browser and node.js</p>
+        <p><a href="https://github.com/mzabriskie/axios/">Docs</a></p>
+      </div>
+      <div class="waffle-piece">
+        <p>Stylus</p>
+        <p>An innovative stylesheet language that compiles down to CSS.</p>
+        <p><a href="http://stylus-lang.com/">Docs</a></p>
+      </div>
+      <div class="waffle-piece">
+        <p>LostGrid</p>
+        <p>A powerful grid system built in PostCSS that works with any preprocessor and even vanilla CSS.</p>
+        <p><a href="http://stylus-lang.com/">Docs</a></p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -62,44 +54,54 @@ export default {
   lost-center 980px
   padding 30px
   text-align center
+.waffle
+  margin-top 50px
+  height 100%
+.waffle-piece
+  lost-waffle 1/1
+  border-radius 10px
+  height 250px
+  background #607D8B
+  color white
+  display flex
+  flex-direction column
+  justify-content space-between
+  align-items center
+  @media(min-width 480px)
+    lost-waffle 1/2
+    height 250px
+  p
+    padding 5px
+    &:first-child
+      font-size 18px
+      letter-spacing 0.1px
+      font-weight 600
+  p
+    &:last-child
+      align-self flex-middle
+      width 100%
+  a
+    color white
+    font-weight 600
+    text-decoration none
+    &:before
+      content '> '
 .logo
-  width 200px
+  width 100px
   margin 0 auto
   img
     max-width 100%
     margin 0 auto
 h1
-  color #b3b3b3
   font-size 1.3em
   margin-bottom 0.3rem
   font-weight normal
-h2
-  font-weight normal
-  font-size 1.2em
-  margin-bottom 0.2rem
-  color #b3b3b3
-  text-align left
+  background #29abe2
+  color white
+  padding 5px 0
+  border-radius 5px
 span
   display block
-  color #29abe2
+  color #607D8B
   font-size 18px
-a
-  text-decoration none
-  color #29abe2
-table
-  text-align left
-  width 100%
-  vertical-align middle
-  line-height 1.2
-  tr
-    &:nth-child(odd)
-      background #f5f5f5
-  th
-    font-weight: normal
-    color #616161
-    background #e6e6e6
-    padding 6px
-  td
-    padding 6px
-    height 30px
 </style>
