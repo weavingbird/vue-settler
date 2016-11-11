@@ -1,3 +1,4 @@
+![Vue SPA Starter from WeavingBird](https://github.com/weavingbird/vue-settler/raw/master/template/src/assets/logo.png)
 # Vue Settler
 
 A Vue 2.0 SPA starter based on the official vue webpack template. It includes the features
